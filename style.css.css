@@ -1,0 +1,114 @@
+
+
+body {
+display: grid;
+grid-template-areas:
+"contact headline headline headline headline"
+"contact bio bio bio projects"
+"contact bio bio bio projects"
+"contact bio bio bio projects";
+height: 85%;
+width: 100%;
+position: absolute;
+top: 0;
+bottom: 0;
+margin: auto;
+background-color: rgba(60, 72.9, 86.7, .5);
+color: black;
+
+}
+
+h1{
+  font-size: 40px; 
+}
+
+h2 {
+  font-size: 30px;
+}
+
+.contact {
+grid-area: contact;
+margin: 2%;
+font-family: 'Lato', sans-serif;
+padding: 10px;
+}
+
+.headline, .bio, .projects {
+display: block;
+border-radius: 2px;
+padding: 10px;
+font-family: 'Nanum Gothic', sans-serif;
+
+}
+
+
+.headline {
+grid-area: headline;
+margin: 1%;
+font-size: 16px;
+}
+
+.bio {
+grid-area: bio;
+margin: 2%;
+text-align: left;
+}
+
+.projects {
+grid-area: projects;
+margin: 2%;
+text-align: left;
+}
+
+a {
+font-family:'Lato', sans-serif;
+color: white; 
+margin: 2%;
+transition: all .2s ease-in-out;
+margin: 2px;
+font-size: 20px; 
+}
+
+a:hover {
+color: red; 
+
+}
+
+a:focus {
+background-color: blue;
+}
+
+
+
+#quizapp {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 5px;
+  transition: all .2s ease-in-out;
+  }
+
+#quizapp:hover {
+transform: scale(1.1);
+}
+
+
+
+@media (max-width: 600px) {
+
+body {
+grid-template-areas:
+'contact'
+'headline'
+'bio'
+'projects';
+}
+
+h2 {
+font-size: 16px; 
+}
+}
+
+
+
+
